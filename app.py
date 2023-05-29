@@ -7,7 +7,7 @@ eel.init('source')
 # Removing Rules
 @eel.expose
 def remove_rule():
-    rule = "netsh advfirewall firewall delete rule name= 'BadIP'"
+    rule = "netsh advfirewall firewall delete rule name='BadIP'"
     subprocess.run(["Powershell", "-Command", rule])
 
 # Adding Inbound Rule 
