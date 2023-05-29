@@ -1,7 +1,7 @@
 # Firewalll
+
 - A python script to add malicious IP's to firewall.
 
-
-# Credits 
+# Credits
 
 - The PC security Channel <https://www.youtube.com/@pcsecuritychannel>
