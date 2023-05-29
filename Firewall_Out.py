@@ -12,4 +12,4 @@ for row in mycsv:
     if(ip)!=("dst_ip"):
         print("Added Rule to block:", ip)
         rule = "netsh advfirewall firewall add rule name='BadIP' Dir=Out Action=Block RemoteIP=" + ip  # Fill Dir= with (Out or In)
-        subprocess.run(["Powershhell", "-Command", rule])
+        subprocess.run(["Powershell", "-Command", rule])
