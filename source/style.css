@@ -7,9 +7,9 @@ div {
     display: flex;
     align-items: center;
     scale: 30%;
-    margin-top: -370px;
+    margin-top: -200px;
 }
-div .img{
+.header img{
     -moz-user-select: none;
     -webkit-user-select: none;
     user-select: none;
@@ -19,8 +19,36 @@ body h1{
     align-items: center;
     justify-content: center;
     color: white;
-    margin-top: -350px;
+    margin-top: -220px;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
 }
 h1 span{
     margin-left:15px;
+}
+.buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    scale: 100%;
+    gap: 10px;
+}
+form button{
+    transition: transform 0.3s;
+}
+.buttons form button:hover{
+    transform: scale(1.1);
+    color: rgb(120, 70, 255);
+}
+form button {
+    font-size: 1rem;
+    background: rgb(127, 224, 216);
+    border: none;
+    color: rgb(27, 27, 27);
+    padding: 0.8rem 1.5rem;
+    cursor: pointer;
+    border-radius: 0.8rem;
+    font-weight: bold;
 }
