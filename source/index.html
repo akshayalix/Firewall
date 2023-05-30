@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Firewall</title>
-    <link rel="shortcut icon" href="./img/firewall.png">
+    <link rel="shortcut icon" href="./img/Icon.png">
     <link rel="stylesheet" href="./style.css"
 </head>
 <body>
@@ -15,21 +15,32 @@
     <h1>Firewall <span style=color:cyan>Security</span></h1>
     <div class="buttons">
         <form>
-            <button type="submit" onclick="remove_rule()">Remove</button>
+            <button onclick="remove_rule()">Remove</button>
         </form>
         <form>
-            <button type="submit" onclick="inbound_rule()">Inbound</button>
+            <button onclick="inbound_rule()">Inbound</button>
         </form>
         <form>
-            <button type="submit">Outbound</button>
+            <button onclick="outbound_rule()">Outbound</button>
         </form>
     </div>
-
-    
+    <div class="footer">
+        <h1>Made with ❣️ by Alix</h1>
+    </div>
+    <div class="git">
+        <button onclick="window.location.href = 'https://github.com/akshayalix/Firewall';">
+            <img src="./img/GitHub.png">
+        </button>
+    </div>
     <script src="/eel.js"></script>
+    <script type="text/javascript" src="./script.js"></script>
 </body>
 </html>
+  
+        
  
+
+    
 
     
     
