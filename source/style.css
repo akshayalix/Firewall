@@ -38,7 +38,7 @@ h1 span{
     gap: 10px;
 }
 form button{
-    transition: transform 0.3s;
+    transition: 0.3s;
 }
 .buttons form button:hover{
     transform: scale(1.1);
