@@ -33,7 +33,7 @@ h1 span{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 50px;
+    margin-top: 40px;
     scale: 100%;
     gap: 10px;
 }
@@ -43,6 +43,7 @@ form button{
 .buttons form button:hover{
     transform: scale(1.1);
     color: rgb(120, 70, 255);
+    background: white;
 }
 .buttons form button {
     font-size: 1rem;
@@ -65,11 +66,14 @@ form button{
     margin-bottom: none;
 }
 .git {
+    height: 0px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .git button{
+    position: relative;
+    top: 100px;
     border: none;
     scale: 10%;
     background: none;
@@ -79,7 +83,4 @@ form button{
 }
 .git button:hover{
     transform: scale(1.1);
-}
-.git img{
-    margin-top: px;
 }
