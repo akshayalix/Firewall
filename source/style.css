@@ -1,8 +1,10 @@
 *{
     margin: 0px;
+}
+body{
     background-color: rgb(19, 19, 19);
 }
-div {
+.header {
     justify-content: center;
     display: flex;
     align-items: center;
@@ -42,7 +44,7 @@ form button{
     transform: scale(1.1);
     color: rgb(120, 70, 255);
 }
-form button {
+.buttons form button {
     font-size: 1rem;
     background: rgb(127, 224, 216);
     border: none;
@@ -51,4 +53,33 @@ form button {
     cursor: pointer;
     border-radius: 0.8rem;
     font-weight: bold;
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    border: none;
+}
+.footer h1{
+    scale: 70%;
+    margin-top: 100px;
+    margin-bottom: none;
+}
+.git {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.git button{
+    border: none;
+    scale: 10%;
+    background: none;
+    margin-top: -370px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+.git button:hover{
+    transform: scale(1.1);
+}
+.git img{
+    margin-top: px;
 }
