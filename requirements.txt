@@ -1,3 +1,4 @@
+altgraph==0.17.3
 bottle==0.12.25
 bottle-websocket==0.2.9
 certifi==2023.5.7
@@ -9,8 +10,12 @@ gevent==22.10.2
 gevent-websocket==0.10.1
 greenlet==2.0.2
 idna==3.4
+pefile==2023.2.7
 pycparser==2.21
+pyinstaller==5.11.0
+pyinstaller-hooks-contrib==2023.3
 pyparsing==3.0.9
+pywin32-ctypes==0.2.0
 requests==2.31.0
 subprocess.run==0.0.8
 urllib3==2.0.2
