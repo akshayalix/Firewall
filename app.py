@@ -44,6 +44,7 @@ def outbound_rule():
             rule = "netsh advfirewall firewall add rule name='BadIP' Dir=Out Action=Block RemoteIP=" + ip  # Fill Dir= with (Out or In)
             subprocess.run(["Powershell", "-Command", rule])
 
+# Opening Github in external tab.
 @eel.expose
 def open_github():
     webbrowser.open("https://www.github.com/akshayalix/Firewall")
