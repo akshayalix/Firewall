@@ -14,3 +14,8 @@ function inbound_rule() {
 function remove_rule() {
     eel.remove_rule();
 }
+
+// To open Github Page
+function open_github(){
+    eel.open_github()
+}

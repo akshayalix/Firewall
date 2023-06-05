@@ -1,5 +1,6 @@
 import eel
 import requests, csv, subprocess
+import webbrowser
 
 # set folder 
 eel.init('source')
@@ -43,7 +44,9 @@ def outbound_rule():
             rule = "netsh advfirewall firewall add rule name='BadIP' Dir=Out Action=Block RemoteIP=" + ip  # Fill Dir= with (Out or In)
             subprocess.run(["Powershell", "-Command", rule])
 
-
+@eel.expose
+def open_github():
+    webbrowser.open("https://www.github.com/akshayalix/Firewall")
 
 
 eel.start('index.html', size=(700, 500), position=(750, 300))
