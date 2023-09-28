@@ -3,7 +3,7 @@ import requests, csv, subprocess
 # Source = Abuse CH
 response = requests.get("https://feodotracker.abuse.ch/downloads/ipblocklist.csv").text
 
-rule = "netsh advfirewall firewall delete rule name= 'BadIP'"
+rule = "netsh advfirewall firewall delete rule name= 'BadIP' Dir=In"
 subprocess.run(["Powershell", "-Command", rule])
 
 mycsv = csv.reader(filter(lambda x: not x.startswith("#"), response.splitlines()))
