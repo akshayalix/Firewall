@@ -8,7 +8,9 @@ eel.init('source')
 
 # Removing Rules
 @eel.expose
-def remove_rule():
+def elevation_remove_rule():
+    subprocess.run(['python', 'elevation.py'])
+
     rule = "netsh advfirewall firewall delete rule name='BadIP'"
     subprocess.run(["Powershell", "-Command", rule])
 
