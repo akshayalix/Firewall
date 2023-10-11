@@ -20,12 +20,10 @@ function open_github(){
     eel.open_github()
 }
 
+eel.expose(updateConsole);
+
 function updateConsole(text) {
     const consoleDiv = document.getElementById('console');
     consoleDiv.innerText += text;
     consoleDiv.scrollTop = consoleDiv.scrollHeight; // Automatically scroll to the bottom
 }
-
-// Initialize Eel and expose the updateConsole function
-eel.expose(updateConsole);
-eel.initialize();

@@ -84,3 +84,14 @@ form button{
 .git button:hover{
     transform: scale(1.1);
 }
+#console {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    background-color: #333; /* Background color */
+    color: #fff; /* Text color (white) */
+    font-family: monospace; /* Use a monospaced font for code-like appearance */
+    padding: 10px;
+    overflow-y: auto;
+    height: 300px; /* Set a fixed height and enable scrolling if needed */
+}

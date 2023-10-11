@@ -2,18 +2,16 @@ import eel
 import requests, csv, subprocess
 import webbrowser
 import sys
+import pyuac
 
 # set folder 
 eel.init('source')
 
 # Removing Rules
 @eel.expose
-def elevation_remove_rule():
-    subprocess.run(['python', 'elevation.py'])
-
+def remove_rule():
     rule = "netsh advfirewall firewall delete rule name='BadIP'"
     subprocess.run(["Powershell", "-Command", rule])
-
 
 # Adding Inbound Rule 
 @eel.expose
@@ -70,5 +68,8 @@ def send_to_js(text):
     eel.updateConsole(text)
 
 
+# For lauching in chrome.
+eel.start('index.html', mode='chrome-app', port=8080)  
 
-eel.start('index.html', mode='chrome-app', port=8080)
+# For a window app.
+#eel.start('index.html', size=(700, 500), position=(750, 300))
