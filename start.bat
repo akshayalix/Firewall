@@ -7,7 +7,7 @@ set "Current=%~dp0"
 call "%Current%.venv\Scripts\activate.bat"
 
 :: Start your Eel application without displaying a console window
-start %Current%.venv\Scripts\python.exe "%Current%app.py"
+start %Current%.venv\Scripts\python.exe "%Current%test_console.py"
 
 :: Deactivate the virtual environment
 deactivate

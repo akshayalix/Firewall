@@ -24,6 +24,7 @@ eel.expose(updateConsole);
 
 function updateConsole(text) {
     const consoleDiv = document.getElementById('console');
-    consoleDiv.innerText += text;
+    // consoleDiv.innerText += text;
+    consoleDiv.innerText = text; // Clear the existing content and replace with new text
     consoleDiv.scrollTop = consoleDiv.scrollHeight; // Automatically scroll to the bottom
 }

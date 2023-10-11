@@ -89,9 +89,17 @@ form button{
     display: flex;
     align-items: center;
     background-color: #333; /* Background color */
-    color: #fff; /* Text color (white) */
+    color: rgb(74, 252, 252); /* Text color (white) */
     font-family: monospace; /* Use a monospaced font for code-like appearance */
     padding: 10px;
-    overflow-y: auto;
-    height: 300px; /* Set a fixed height and enable scrolling if needed */
+    overflow-y: hidden;
+    /*height: 300px; for chrome-app*/
+    height: 150px;
+    /*margin-top: 30px;
+    margin-left: 500px;*/
+    margin-top: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
+    border-radius: 30px;
+    font-size: 20px;
 }
