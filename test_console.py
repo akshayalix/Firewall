@@ -80,12 +80,17 @@ def send_to_js(text):
 # For a window app.
 #eel.start('index.html', size=(700, 500), position=(750, 300))
 
+
 if __name__=="__main__":
 
     print("-> Make sure to run this as admin to work\n")
 
+
     #eel.start('index.html', mode='chrome-app', port=8080)
-    eel.start('index.html', size=(1000, 700), position=(500, 100))
+    
+    eel.start('index.html', position=(500, 100), size=(1000, 700))
+
+    
 
     
 
