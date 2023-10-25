@@ -2,7 +2,6 @@ import eel
 import requests, csv, subprocess
 import webbrowser
 import sys
-import pyuac
 from time import sleep
 
 # set folder 
