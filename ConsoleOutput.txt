@@ -1,0 +1,45 @@
+# Inside Python file
+
+import sys
+import eel
+
+class ConsoleOutput:
+    def __init__(self):
+        self.buffer = []
+
+    def write(self, text):
+        self.buffer.append(text)
+        # Send the text to JavaScript using Eel
+        eel.updateConsole(" ".join(self.buffer))
+
+sys.stdout = ConsoleOutput()
+sys.stderr = ConsoleOutput()
+
+@eel.expose
+def send_to_js(text):
+    eel.updateConsole(text)
+
+#..............................
+
+
+# Inside js 
+
+<script>
+    function updateConsole(text) {
+        const consoleDiv = document.getElementById('console');
+        consoleDiv.innerText += text;
+        consoleDiv.scrollTop = consoleDiv.scrollHeight; // Automatically scroll to the bottom
+    }
+
+    // Initialize Eel and expose the updateConsole function
+    eel.expose(updateConsole);
+    eel.initialize();
+</script>
+
+# .......
+
+# Inside Html
+
+<div id="console"></div>
+
+#........
