@@ -50,4 +50,4 @@ def open_github():
     webbrowser.open("https://www.github.com/akshayalix/Firewall")
 
 
-eel.start('index.html', size=(700, 500), position=(750, 300))
+eel.start('index.html', size=(800, 960), position=(550, 50))
