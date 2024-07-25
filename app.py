@@ -50,4 +50,5 @@ def open_github():
     webbrowser.open("https://www.github.com/akshayalix/Firewall")
 
 
+eel.browsers.set_path('chrome', r'C:\Users\alix\AppData\Local\Thorium\Application\thorium.exe')
 eel.start('index.html', size=(800, 960), position=(550, 50))
